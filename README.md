@@ -1,3 +1,7 @@
+拷贝项目，穿越门：https://github.com/icarusion/vue-vueRouter-webpack
+
+
+
 #vue-vueRouter-webpack
 > 本项目可以帮你快速搭建一个基于Vue的单页面富应用,但这并不意味着是最佳实践,所有的目录结构和webpack配置都可以根据自己需要修改
 
