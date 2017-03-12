@@ -17,8 +17,8 @@
   "author": "zhh",
   "license": "MIT",
   "dependencies": {
-    "vue": "^1.0.25",
-    "vue-router": "^0.7.13"
+    "vue": "^2.2.2",
+    "vue-router": "^2.3.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
@@ -43,7 +43,7 @@
     "vue-html-loader": "^1.2.0",
     "vue-loader": "^7.2.0",
     "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.1"
+    "webpack": "^2.2.1"
   },
   "bugs": {
     "url": "https://github.com/502222517/vue-webpack/issues"
