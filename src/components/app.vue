@@ -1,4 +1,4 @@
-<style scoped>
+<style >
     @import '../styles/common.css';
 </style>
 <template>
@@ -10,9 +10,6 @@
     export default {
         data () {
             return {}
-        },
-        ready () {
-
         },
         beforeDestroy () {
 

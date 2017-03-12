@@ -5,8 +5,8 @@
   "main": "./src/main.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
-    "dev": "webpack --progress --hide-modules --config webpack.dev.config.js",
-    "wl": "webpack --watch --progress --hide-modules --config webpack.dev.config.js",
+    "dev": "webpack --progress --colors --hide-modules --config --display-error-details webpack.dev.config.js",
+    "wl": "webpack --watch --progress --colors --hide-modules --config webpack.dev.config.js",
     "server": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },

@@ -13,23 +13,39 @@ module.exports = {
     },
     // 加载器
     module: {
-        loaders: [
-            { test: /\.vue$/, loader: 'vue' },
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
-            { test: /\.css$/, loader: 'style!css!autoprefixer'},
-            { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-            { test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=8192'},
-            { test: /\.(html|tpl)$/, loader: 'html-loader' }
+        rules: [
+            { test: /\.vue$/, loader:'vue-loader',options:{
+                loaders: {
+                    css: ExtractTextPlugin.extract({
+                            fallback: "style-loader",
+                            use: ["css-loader?sourceMap"],
+                            publicPath: "../dist/"
+                        }),
+                    less: ExtractTextPlugin.extract({
+                            fallback:'vue-style-loader',
+                            use:['css-loader','less-loader']
+                        }),
+                    sass: ExtractTextPlugin.extract({
+                        fallback:'vue-style-loader',
+                        use:['css-loader','sass-loader']
+                    })
+                }
+            }},
+            { test: /\.js$/, use: 'babel-loader',exclude: /node_modules/},
+            { test: /\.css$/, use:['style-loader','css-loader','autoprefixer-loader']},
+            { test: /\.scss$/, use: ['style-loader','css-loader','sass-loader?sourceMap']},
+            { test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/, use:['url-loader?limit=8192']},
+            { test: /\.(html|tpl)$/, use: 'html-loader' }
         ]
     },
     // 转es5
-    babel: {
+    /*babel: {
         presets: ['es2015'],
         plugins: ['transform-runtime']
-    },
+    },*/
     resolve: {
         // require时省略的扩展名，如：require('module') 不需要module.js
-        extensions: ['', '.js', '.vue'],
+        extensions: ['.js', '.vue'],
         // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
             vue:'vue/dist/vue.js',

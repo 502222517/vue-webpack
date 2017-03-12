@@ -1,4 +1,4 @@
-<style scoped lang="less">
+<style >
     h1{
         color: #28a7e1;
         text-align: center;
@@ -27,9 +27,6 @@
             return {
 
             }
-        },
-        ready () {
-
         },
         beforeDestroy () {
 
