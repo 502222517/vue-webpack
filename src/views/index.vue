@@ -6,24 +6,11 @@
         font-weight: bold;
         margin-top: 100px;
     }
-    h2{
-        text-align: center;
-        font-size: 20px;
-        margin-top: 50px;
-        img{
-            width: 150px;
-        }
-    }
 </style>
 <template>
-    <h2>
-        <img src="../images/logo.png">
-    </h2>
     <h1>
-        覆盖移动终端:
-        {{ 3731700153 |  NumberSeparator }}
+        Hello word!
     </h1>
-    <h2 v-time></h2>
 </template>
 <script>
     import NumberSeparator from '../filters/number-separator';

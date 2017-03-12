@@ -1,18 +1,20 @@
 {
-  "name": "vue-vue-router-webpack",
-  "version": "1.1.0",
-  "description": "A base vue project with webpack",
-  "main": "index.js",
+  "name": "vue-webpack",
+  "version": "1.0.0",
+  "description": "vue vue-router webpack 纯净版",
+  "main": "./src/main.js",
   "scripts": {
     "init": "webpack --progress --config webpack.dev.config.js",
-    "dev": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
+    "dev": "webpack --progress --hide-modules --config webpack.dev.config.js",
+    "wl": "webpack --watch --progress --hide-modules --config webpack.dev.config.js",
+    "server": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
     "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icarusion/vue-vueRouter-webpack.git"
+    "url": "https://github.com/502222517/vue-webpack.git"
   },
-  "author": "Aresn",
+  "author": "zhh",
   "license": "MIT",
   "dependencies": {
     "vue": "^1.0.25",
@@ -44,7 +46,7 @@
     "webpack": "^1.13.1"
   },
   "bugs": {
-    "url": "https://github.com/icarusion/vue-vueRouter-webpack/issues"
+    "url": "https://github.com/502222517/vue-webpack/issues"
   },
-  "homepage": "https://github.com/icarusion/vue-vueRouter-webpack#readme"
+  "homepage": "https://github.com/502222517/vue-webpack#readme"
 }
