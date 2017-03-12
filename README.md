@@ -1,20 +1,6 @@
-拷贝项目，穿越门：https://github.com/icarusion/vue-vueRouter-webpack
-
-
-
-#vue-vueRouter-webpack
+#vue-webpack
 > 本项目可以帮你快速搭建一个基于Vue的单页面富应用,但这并不意味着是最佳实践,所有的目录结构和webpack配置都可以根据自己需要修改
 
-##教程
-> 可以访问下面的链接来查看系列教程
-
-[Vue+Webpack开发可复用的单页面富应用教程（配置篇）](https://www.talkingcoder.com/article/6310080842228107877)
-
-[Vue+Webpack开发可复用的单页面富应用教程（组件篇）](https://www.talkingcoder.com/article/6310724958473489215)
-
-[Vue+Webpack开发可复用的单页面富应用教程（技巧篇）](https://www.talkingcoder.com/article/6310756346094488391)
-
-[Vue+Webpack使用规范](https://www.talkingcoder.com/article/6309726065044556372)
 ##目录结构
 <pre>
 │  .gitignore          # 忽略文件,比如 node_modules
@@ -119,19 +105,8 @@ npm run dev
 npm run build
 ```
 
-####访问
-在浏览器地址栏输入http://127.0.0.1:8080
-
 #更新
 
-##2016.10.3
-* package支持了less和sass
+##2017.03.12
 
-##2016.9.11
-* 修复打包到生产环境时,index_prod.html文件的html结构错误的bug
 
-##2016.8.22
-* 全部改为ES2015
-* 抽离路由配置为router.js
-* 将routers目录重命名为views
-* vue配置默认支持less和sass

@@ -1,7 +1,3 @@
-/**
- * Created by aresn on 16/7/5.
- */
-
 var path = require('path');
 var webpack = require('webpack');
 
@@ -13,7 +9,7 @@ module.exports = {
     },
     // 输出
     output: {
-        path: path.join(__dirname, './dist')
+        path: path.join(__dirname, 'dist')
     },
     // 加载器
     module: {
@@ -36,8 +32,12 @@ module.exports = {
         extensions: ['', '.js', '.vue'],
         // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
-            filter: path.join(__dirname, './src/filters'),
-            components: path.join(__dirname, './src/components')
+            vue:'vue/dist/vue.js',
+            libs: path.join(__dirname, './src/libs'),
+            filters: path.join(__dirname, './src/filters'),
+            directives: path.join(__dirname, './src/directives'),
+            components: path.join(__dirname, './src/components'),
+            views: path.join(__dirname, './src/views')
         }
     },
     plugins: [
