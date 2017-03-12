@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     // 入口
@@ -48,7 +49,7 @@ module.exports = {
         extensions: ['.js', '.vue'],
         // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
-            vue:'vue/dist/vue.js',
+            vue:'vue/dist/vue.js', // vue.js
             libs: path.join(__dirname, './src/libs'),
             filters: path.join(__dirname, './src/filters'),
             directives: path.join(__dirname, './src/directives'),

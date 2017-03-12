@@ -28,6 +28,9 @@
 
             }
         },
+        mounted (){
+            console.log('aaaaa');
+        },
         beforeDestroy () {
 
         },

@@ -1,4 +1,5 @@
 <style >
+    @import '../styles/reset.css';
     @import '../styles/common.css';
 </style>
 <template>
@@ -10,6 +11,9 @@
     export default {
         data () {
             return {}
+        },
+        mounted (){
+            console.log('app');
         },
         beforeDestroy () {
 

@@ -5,6 +5,8 @@ import Routers from './router';
 
 Vue.use(VueRouter);
 
+console.log('Routers',Routers);
+
 // 路由配置
 let router = new VueRouter({
     routes:Routers
@@ -20,6 +22,6 @@ router.afterEach(() => {
 
 // 从而让整个应用都有路由功能
 const app = new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app');
